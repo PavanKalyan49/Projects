@@ -1,0 +1,9 @@
+package com.example.crudemo.repo;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.example.cruddemo.entity.Product;
+
+public interface Productrepository extends CrudRepository<Product,Integer>{
+
+}

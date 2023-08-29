@@ -1,0 +1,27 @@
+package com.example.cruddemo.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.cruddemo.entity.Product;
+import com.example.crudemo.repo.Productrepository;
+
+@Controller
+public class ProductController {
+	
+	@Autowired(required=true)
+	Productrepository repo;
+	
+	@GetMapping("/getproducts")
+	public ResponseEntity<List<Product>> getallproducts(){
+		List<Product> products= (List<Product>) repo.findAll();
+		return new ResponseEntity<>(products,HttpStatus.OK);
+		
+	}
+
+}

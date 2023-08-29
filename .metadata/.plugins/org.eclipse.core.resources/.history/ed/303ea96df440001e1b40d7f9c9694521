@@ -1,0 +1,19 @@
+package interview;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FirstElement {
+	public static void main(String args[])
+	{
+		List<String> Str = new ArrayList<>();
+		Str.add("Nagavali");
+		Str.add("Godavari");
+		Str.add("Vamsadhara");
+		Str.add("Krishna");
+		Str.add("Cauvery");
+		
+		System.out.println(Str.get(0));
+	}
+
+}

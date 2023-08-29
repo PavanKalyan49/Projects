@@ -1,0 +1,25 @@
+package odd;
+
+public class Odd {
+	public static void main(String args[]) {
+		    int n = 189;
+		    number(n);
+		  }
+
+		  public static void number(int n) {
+		    try {
+		      EvenNumber(n);
+		      System.out.println(n + " is even.");
+		    } catch (IllegalArgumentException e) {
+		      System.out.println("Error is " + e.getMessage());
+		    }
+		  }
+
+		  public static void EvenNumber(int number) {
+		    if (number % 2 != 0) {
+		      throw new IllegalArgumentException(number+" is odd.");
+		    }
+		  }
+		}
+
+

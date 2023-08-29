@@ -1,0 +1,22 @@
+package reverse_string;
+
+
+public class Reverse_string_without_method {
+	public static void main (String[] args)
+	{
+	//With method
+
+	 String str = "IndianOcean";
+	
+	 for(int i=0;i<=str.length()-1;i++)
+	 {
+	     System.out.print(str.charAt(i));
+	 }
+	     System.out.println("");
+
+	 for(int i = str.length() - 1; i >= 0; --i)
+	 {
+	     System.out.print(str.charAt(i)); 
+	 }
+	}
+}

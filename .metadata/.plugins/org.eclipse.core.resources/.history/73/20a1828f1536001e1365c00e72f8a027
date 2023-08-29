@@ -1,0 +1,22 @@
+package assignment2;
+
+import java.util.HashMap;
+
+public class HashmapExample {
+	public static void main(String args[])
+	{
+		HashMap<String, Character> Students = new HashMap<> ();
+		Students.put("Pavan",'A');
+		Students.put("Sai",'B');
+		Students.put("Harsha",'F');
+		Students.put("Ram",'C');
+		Students.put("Shyam",'D');
+		Students.put("Kalyan",'E');
+		Students.put("Satwik",'A');
+		System.out.println("Original Hashmap is "+ Students);
+		
+		
+
+	}
+
+}

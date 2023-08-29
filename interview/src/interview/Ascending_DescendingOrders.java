@@ -1,0 +1,24 @@
+package interview;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Ascending_DescendingOrders {
+	public static void main(String args[])
+	{
+		List<Integer> integer = new ArrayList<>();
+		integer.add(23);
+		integer.add(230);
+		integer.add(24);
+		integer.add(244);
+		integer.add(234);
+		
+	System.out.println(integer.stream().sorted().collect(Collectors.toList()));
+	System.out.println(integer.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList()));
+	
+
+	}
+
+}

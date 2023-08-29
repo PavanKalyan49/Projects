@@ -1,0 +1,19 @@
+package codesnippets;
+
+import java.util.Scanner;
+
+public class PalindromInteger {
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a string:");
+		 int num=sc.nextInt();
+		 int r=num%10;
+		 int q=num/10;
+		 if(q*10+r==num)
+		 {
+			 
+		 }
+	}
+
+}

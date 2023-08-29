@@ -1,0 +1,19 @@
+package assignment3;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Largest_Smallest {
+	public static void main(String args[])
+	{
+	  List < Integer > num =Arrays.asList();
+	  System.out.println("List of numbers: " + num);
+	  
+	  System.out.println(num.stream() .mapToDouble(Integer::doubleValue)
+		      .average()
+		      .orElse(0.0));
+	  
+	 
+	}
+
+}

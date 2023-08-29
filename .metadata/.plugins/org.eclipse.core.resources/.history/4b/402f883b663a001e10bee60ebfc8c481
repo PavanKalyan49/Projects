@@ -1,0 +1,25 @@
+package assignment3;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Largest_Smallest {
+	public static void main(String args[])
+	{
+		List<Integer> integer = new ArrayList<>();
+		integer.add(1000);
+		integer.add(2000);
+		integer.add(4000);
+		integer.add(300);
+		integer.add(790);
+		integer.add(299);
+	List<Integer> sort = integer.stream().sorted().collect(Collectors.toList());
+	System.out.println(sort);
+		System.out.println(sort.get(1));
+		System.out.println(sort.get(sort.size()-2));
+		
+		
+		
+	}
+}

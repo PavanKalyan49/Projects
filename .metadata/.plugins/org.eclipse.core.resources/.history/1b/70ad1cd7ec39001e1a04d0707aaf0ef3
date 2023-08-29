@@ -1,0 +1,20 @@
+package assignment3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Largest_Smallest {
+	public static void main(String args[])
+	{
+		List<Integer> integer = new ArrayList<>();
+		integer.add(1000);
+		integer.add(2000);
+		integer.add(4000);
+		integer.add(300);
+		integer.add(790);
+		integer.add(299);
+		System.out.println("Second smallest integer is :"+ 
+		    integer.stream().sorted().skip(1).findFirst().orElse(null));
+		System.out.println(integer.stream().sorted().skip(4).findFirst().orElse(null));
+	}
+}

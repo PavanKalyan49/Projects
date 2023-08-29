@@ -1,0 +1,17 @@
+package interview;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cube {
+	public static void main(String args[])
+	{
+		List<Integer> integer = new ArrayList<>();
+		integer.add(23);
+		integer.add(4000);
+		integer.add(24);
+		integer.add(780);
+		integer.add(940);
+	}
+
+}

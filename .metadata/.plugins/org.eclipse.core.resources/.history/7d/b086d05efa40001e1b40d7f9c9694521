@@ -1,0 +1,21 @@
+package interview;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MaxElement {
+	public static void main(String args[])
+	{
+		List<Integer> integer = new ArrayList<>();
+		integer.add(1);
+		integer.add(100);
+		integer.add(1000);
+		integer.add(10000);
+		integer.add(20);
+		integer.add(200);
+		
+		System.out.println(integer.stream().sorted());
+		
+	}
+
+}

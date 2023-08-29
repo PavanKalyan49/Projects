@@ -1,0 +1,19 @@
+package interview;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Filter_UpperCase {
+	public static void main(String args[]) {
+		List<String> str = new ArrayList<>();
+		str.add("Srikakulam");
+		str.add("Andhra Pradesh");
+		str.add("Bengaluru");
+		str.add("Karnataka");
+		str.add("Sai");
+		
+		System.out.println(str.stream().filter(i->i.length()<5).map(i->i.toUpperCase()).collect(Collectors.toList()));
+
+}
+}

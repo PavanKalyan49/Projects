@@ -1,0 +1,27 @@
+package assignment1;
+
+import java.util.Scanner;
+
+public class Grades_nestedif {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter Grade");
+        String grade = scan.nextLine();
+
+        if (grade.equals("A")) {
+            System.out.println("Excellent job");
+        } else if (grade.equals("B")) {
+            System.out.println("Good job");
+        } else if (grade.equals("C")) {
+            System.out.println("Average job");
+        } else if (grade.equals("D")) {
+            System.out.println("Needs improvement");
+        } else if (grade.equals("F")) {
+            System.out.println("Failed");
+        } else {
+            System.out.println("Invalid grade");
+        }
+    }
+}

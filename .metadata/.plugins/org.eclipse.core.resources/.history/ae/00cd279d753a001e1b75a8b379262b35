@@ -1,0 +1,37 @@
+package codesnippets;
+
+import java.util.Scanner;
+
+public class FibanocciSeries {
+	public static void main(String args[])
+	{
+		int a=0,b =1;
+		int c;
+		
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter the length of Fibanocci series : ");
+			
+			int l=sc.nextInt();
+			for(int i=2;i<l;i++)
+			{
+				if(i==2)
+				{
+					System.out.print(a);
+					System.out.print(b);
+					
+				}
+	
+				else {
+				c=a+b;
+				System.out.print(c);
+				a=b;
+				c=b;
+			}
+			
+		}
+		
+		
+	}
+
+	}
+}

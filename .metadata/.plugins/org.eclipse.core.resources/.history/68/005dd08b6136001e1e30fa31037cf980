@@ -1,0 +1,12 @@
+package assignment2;
+
+enum Month {
+	   SMALL, MEDIUM, LARGE, EXTRALARGE
+	}
+
+	public class EnumExample {
+	   public static void main(String[] args) {
+	      System.out.println( EnumExample.SMALL);
+	      System.out.println( EnumExample.MEDIUM);
+	   }
+	}

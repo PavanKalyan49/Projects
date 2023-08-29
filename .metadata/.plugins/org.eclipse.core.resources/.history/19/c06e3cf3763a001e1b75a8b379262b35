@@ -1,0 +1,31 @@
+package codesnippets;
+
+import java.util.Scanner;
+
+public class FibanocciSeries {
+	public static void main(String args[])
+	{
+		int a=0,b =1;
+		int c=10;
+		int l;
+		
+		
+		
+			for(int i=2;i<=c;i++)
+			{
+			
+	
+	
+				l=a+b;
+				System.out.print(l);
+				a=b;
+				c=b;
+		
+			
+		}
+		
+		
+	}
+
+	}
+}
